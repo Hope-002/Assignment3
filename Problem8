@@ -1,0 +1,14 @@
+Find the Value of (483*483*483+ 517*517*517) / (517*517 - 517*483 + 483*483)6
+
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int a=483 ,b=517 ,c=6, d=0;
+	    d=(a*a*a + b*b*b) / (b*b - b*a + a*a)*c;
+	    System.out.println(d);
+	}
+}
