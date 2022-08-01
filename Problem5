@@ -1,0 +1,20 @@
+ Swap two numbers without using Third Variable
+ 
+ import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int num1, num2;
+	    Scanner in = new Scanner(System.in);
+	    System.out.println("Enter the numbers: ");
+	    num1 = in.nextInt();
+	    num2 = in.nextInt();
+	    System.out.println("Numbers before swapping: " + num1 + " " + num2);
+	    num1 = num1 + num2;
+	    num2 = num1 - num2;
+	    num1 = num1 - num2;
+	    System.out.println("Numbers after swapping: " + num1 + " " + num2);
+	}
+}
