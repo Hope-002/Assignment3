@@ -1,0 +1,27 @@
+ Java program to display the following pattern
+
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		int i, j, space,m=1;
+		
+		for(i=9; i>=0; i--)
+		{
+		    for(space =1 ; space<m; space++)
+		    {
+	            System.out.print(" ");
+		    }
+		    for(j=1; j<=i; j++)
+		    {
+		        System.out.print(i);
+		    }
+		    m++;
+		    System.out.println("\n");
+		}
+	}
+}
+
