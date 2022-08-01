@@ -1,0 +1,40 @@
+write a program to calculate electricity bill using if-else statements.
+Conditions:
+ For first 50 units – Rs. 3.50/unit
+ For next 100 units – Rs. 4.00/unit
+ For next 100 units – Rs. 5.20/unit
+ For units above 250 – Rs. 6.50/unit
+ You can use conditional statements
+
+
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    double unit, amount = 0;
+	    Scanner in = new Scanner(System.in);
+	    unit = in.nextDouble();
+	    
+	    if(unit >= 0 && unit <= 50)
+	    {
+	       amount = unit * 3.50;
+	    }
+	    else if(unit >50 && unit <= 150)
+	    {
+	       amount = 50 * 3.50 + (unit - 50) * 4.00;
+	    }
+	    else if(unit > 150 && unit <= 250)
+	    {
+	        amount = 50 * 3.50 + 100 * 4 + (unit - 150) * 5.20; 
+	    }
+	    else if(unit > 250)
+	    {
+	       	amount = 50 * 3.50 + 100 * 4 + 250 *5.20 +(unit - 250) * 6.50; 
+	    }
+	    
+	    System.out.println(amount);
+	}
+}
